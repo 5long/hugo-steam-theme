@@ -39,13 +39,16 @@
 	                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
 	                <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
 	            </a>
-	            <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook"
-	                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-	                <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
-	            </a>
-	            <a href="https://plus.google.com/share?url={{ .Permalink }}" title="Share on Google+"
-	               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-	                <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
+              <a class="fa fa-2x"
+                 href="https://www.douban.com/share/service?href={{ .Permalink }}&url={{ .Permalink }}&title={{ .Title }}&name={{ .Title }}"
+                 onclick="window.open(this.href, 'douban-share', 'width=550,height=235')">
+                <span style="width: 26px; height: 26px;" class="fa share-icon share-icon-douban">
+                  <svg style="width: 26px; height: 26px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1 1 30 30" title="Douban" alt="Douban"><g><path d="M5.75 5.51H26.3V8.1H5.75zM20.74 23.98l1.93-4.29h2.21V9.72h-18v9.98h2.04l1.93 4.29H5.07v2.51h21.85v-2.51l-6.18-.01zM10 17.03v-4.88h11.68v4.88H10zm7.99 6.95h-4.37l-1.93-4.29h8.24l-1.94 4.29z"></path></g></svg></span>
+              </a>
+	            <a href="http://service.weibo.com/share/share.php?title={{ .Title }}&url={{ .Permalink }}" title="分享到新浪微博"
+	                onclick="window.open(this.href, 'weibo-share', 'width=550,height=235');return false;">
+	                <i class="fa fa-2x fa-fw fa-weibo"></i> <span
+                    class="hidden">新浪微博</span>
 	            </a>
 	        </section>
 
