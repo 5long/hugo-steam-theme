@@ -1,0 +1,42 @@
+baseurl: "http://example.com/"
+languageCode: "zh-cn"
+title: "博客名字"
+theme: "steam" # http://themes.gohugo.io/steam/
+paginate: 5
+metaDataFormat: "yaml"
+hasCJKLanguage: true
+
+params:
+  title: "博客名字"
+  subtitle: "博客的一句话介绍"
+  copyright: "All rights reserved."
+
+  themeColor: "blue"
+  googleAnalytics: ""
+
+  # To provide some metadata for search engines and the about section in the footer
+  # feel free to add a few information about you and your website.
+  name: "作者名字"
+  bio: "作者的一句话介绍"
+  description: "" # not sure how this works
+  location: "" # optional
+  twitter: "" # optional
+  github: "" # optional
+
+  # Enable a comment system
+  # You can choose between Disqus or Google Plus by setting comments
+  # to disqus or googleplus. For using Disqus you need to enter your
+  # shortname in disqusShortname at the top of the configs. 
+  comments: "disqus"
+
+  # Customize or translate the strings
+  keepReadingStr: "阅读全文"
+  backtotopStr: "回到顶部"
+  shareStr: "分享"
+  pageNotFoundTitle: "404 - 什么都没有"
+
+menu:
+  main:
+  - name: "首页"
+    url: "/"
+    weight: -100
